@@ -1,0 +1,8 @@
+# vim
+.*.swp
+
+# pip
+*.egg-info
+
+# django
+test_project
