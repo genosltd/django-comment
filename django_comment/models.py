@@ -25,4 +25,7 @@ class CommentedItem(models.Model):
 
 
 class HasComments(models.Model):
+    class Meta:
+        abstract = True
+
     comments = GenericRelation(CommentedItem)

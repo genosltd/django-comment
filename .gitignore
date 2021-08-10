@@ -5,4 +5,7 @@
 *.egg-info
 
 # django
-test_project
+db.sqlite3
+
+# pandoc
+README.html

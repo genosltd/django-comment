@@ -7,6 +7,7 @@ name = "pypi"
 django = "~=3.1.1"
 
 [dev-packages]
+cookiecutter = "*"
 
 [requires]
 python_version = "3.7"
