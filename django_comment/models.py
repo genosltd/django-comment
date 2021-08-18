@@ -20,12 +20,11 @@ class CommentedItem(models.Model):
     content_object = GenericForeignKey('content_type', 'object_id')
 
     def __str__(self):
-        return f"{self.content_object} commented by {self.author} on " \
-                    f"{self.posted_on}"
+        return str(self.comment)
 
 
 class HasComments(models.Model):
     class Meta:
         abstract = True
 
-    comments = GenericRelation(CommentedItem)
+    comments = GenericRelation(CommentedItem, blank=True)
