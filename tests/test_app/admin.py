@@ -3,4 +3,7 @@ from django_comment import admin as django_comment_admin
 
 from . import models
 
-# Create your admin here.
+
+@admin.register(models.TestModel)
+class TestModelAdmin(django_comment_admin.HasCommentsAdmin):
+    pass
