@@ -1,0 +1,4 @@
+[run]
+branch = True
+source = src/django_comment
+command_line = runtests.py 

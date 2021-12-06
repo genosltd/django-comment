@@ -3,6 +3,11 @@
 
 # pip
 *.egg-info
+build
+venv
+
+# python
+__pycache__
 
 # django
 db.sqlite3
