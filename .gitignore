@@ -3,8 +3,15 @@
 
 # pip
 *.egg-info
-build
 venv
+
+# build
+dist
+build
+.eggs
+
+# setuptools_scm
+version.py
 
 # python
 __pycache__
